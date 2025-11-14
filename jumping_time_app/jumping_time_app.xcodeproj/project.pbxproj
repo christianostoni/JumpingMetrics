@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		AAE40E362EC36C28009952A6 /* jumping_time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jumping_time.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE40E532EC36D9E009952A6 /* jumping_time_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jumping_time_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		AAE40E382EC36C28009952A6 /* jumping_time */ = {
+		AAE40E552EC36D9E009952A6 /* jumping_time_app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = jumping_time;
+			path = jumping_time_app;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AAE40E332EC36C28009952A6 /* Frameworks */ = {
+		AAE40E502EC36D9E009952A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AAE40E2D2EC36C28009952A6 = {
+		AAE40E4A2EC36D9E009952A6 = {
 			isa = PBXGroup;
 			children = (
-				AAE40E382EC36C28009952A6 /* jumping_time */,
-				AAE40E372EC36C28009952A6 /* Products */,
+				AAE40E552EC36D9E009952A6 /* jumping_time_app */,
+				AAE40E542EC36D9E009952A6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AAE40E372EC36C28009952A6 /* Products */ = {
+		AAE40E542EC36D9E009952A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAE40E362EC36C28009952A6 /* jumping_time.app */,
+				AAE40E532EC36D9E009952A6 /* jumping_time_app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AAE40E352EC36C28009952A6 /* jumping_time */ = {
+		AAE40E522EC36D9E009952A6 /* jumping_time_app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AAE40E412EC36C29009952A6 /* Build configuration list for PBXNativeTarget "jumping_time" */;
+			buildConfigurationList = AAE40E5E2EC36D9F009952A6 /* Build configuration list for PBXNativeTarget "jumping_time_app" */;
 			buildPhases = (
-				AAE40E322EC36C28009952A6 /* Sources */,
-				AAE40E332EC36C28009952A6 /* Frameworks */,
-				AAE40E342EC36C28009952A6 /* Resources */,
+				AAE40E4F2EC36D9E009952A6 /* Sources */,
+				AAE40E502EC36D9E009952A6 /* Frameworks */,
+				AAE40E512EC36D9E009952A6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				AAE40E382EC36C28009952A6 /* jumping_time */,
+				AAE40E552EC36D9E009952A6 /* jumping_time_app */,
 			);
-			name = jumping_time;
+			name = jumping_time_app;
 			packageProductDependencies = (
 			);
-			productName = jumping_time;
-			productReference = AAE40E362EC36C28009952A6 /* jumping_time.app */;
+			productName = jumping_time_app;
+			productReference = AAE40E532EC36D9E009952A6 /* jumping_time_app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AAE40E2E2EC36C28009952A6 /* Project object */ = {
+		AAE40E4B2EC36D9E009952A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
-					AAE40E352EC36C28009952A6 = {
+					AAE40E522EC36D9E009952A6 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
 			};
-			buildConfigurationList = AAE40E312EC36C28009952A6 /* Build configuration list for PBXProject "jumping_time" */;
+			buildConfigurationList = AAE40E4E2EC36D9E009952A6 /* Build configuration list for PBXProject "jumping_time_app" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = AAE40E2D2EC36C28009952A6;
+			mainGroup = AAE40E4A2EC36D9E009952A6;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = AAE40E372EC36C28009952A6 /* Products */;
+			productRefGroup = AAE40E542EC36D9E009952A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AAE40E352EC36C28009952A6 /* jumping_time */,
+				AAE40E522EC36D9E009952A6 /* jumping_time_app */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AAE40E342EC36C28009952A6 /* Resources */ = {
+		AAE40E512EC36D9E009952A6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AAE40E322EC36C28009952A6 /* Sources */ = {
+		AAE40E4F2EC36D9E009952A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		AAE40E3F2EC36C29009952A6 /* Debug */ = {
+		AAE40E5C2EC36D9F009952A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -178,10 +178,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "I need the access to....";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -189,7 +191,7 @@
 			};
 			name = Debug;
 		};
-		AAE40E402EC36C29009952A6 /* Release */ = {
+		AAE40E5D2EC36D9F009952A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -236,17 +238,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "I need the access to....";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		AAE40E422EC36C29009952A6 /* Debug */ = {
+		AAE40E5F2EC36D9F009952A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -256,17 +260,19 @@
 				DEVELOPMENT_TEAM = M2G9M3YLQV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "I need motion because of...";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "christian.jumping-time";
+				PRODUCT_BUNDLE_IDENTIFIER = "christian.jumping-time-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -278,7 +284,7 @@
 			};
 			name = Debug;
 		};
-		AAE40E432EC36C29009952A6 /* Release */ = {
+		AAE40E602EC36D9F009952A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,17 +294,19 @@
 				DEVELOPMENT_TEAM = M2G9M3YLQV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "I need motion because of...";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "christian.jumping-time";
+				PRODUCT_BUNDLE_IDENTIFIER = "christian.jumping-time-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -313,25 +321,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAE40E312EC36C28009952A6 /* Build configuration list for PBXProject "jumping_time" */ = {
+		AAE40E4E2EC36D9E009952A6 /* Build configuration list for PBXProject "jumping_time_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAE40E3F2EC36C29009952A6 /* Debug */,
-				AAE40E402EC36C29009952A6 /* Release */,
+				AAE40E5C2EC36D9F009952A6 /* Debug */,
+				AAE40E5D2EC36D9F009952A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAE40E412EC36C29009952A6 /* Build configuration list for PBXNativeTarget "jumping_time" */ = {
+		AAE40E5E2EC36D9F009952A6 /* Build configuration list for PBXNativeTarget "jumping_time_app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAE40E422EC36C29009952A6 /* Debug */,
-				AAE40E432EC36C29009952A6 /* Release */,
+				AAE40E5F2EC36D9F009952A6 /* Debug */,
+				AAE40E602EC36D9F009952A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AAE40E2E2EC36C28009952A6 /* Project object */;
+	rootObject = AAE40E4B2EC36D9E009952A6 /* Project object */;
 }
