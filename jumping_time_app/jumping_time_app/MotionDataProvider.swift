@@ -132,7 +132,7 @@ class MotionDataProvider: ObservableObject {
         case .landed:
             if magnitude < resetThreshold {
                 print("RESET → monitoring")
-                jumpState = .monitoring
+                jumpState = .idle
             }
 
         case .idle:
