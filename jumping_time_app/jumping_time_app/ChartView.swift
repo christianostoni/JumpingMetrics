@@ -11,68 +11,75 @@ struct ChartView: View {
 
     var body: some View {
         VStack {
-            Text("X-Axis Acceleration (Live)")
+            Text("Live Motion Analysis")
                 .font(.headline)
+                .padding(.top)
 
-            // Create the chart from the history array
             Chart(motionProvider.accelerationHistory) { point in
+                
+                // --- FIX: Removed 'unit: .second' from all x-values ---
 
                 if showX {
                     LineMark(
-                        x: .value("Time", point.time, unit: .second),  // Use .second to format the Date axis
-                        y: .value("Acceleration", point.x)
-                    ).foregroundStyle(by: .value("x", "blue"))
-
-                    PointMark(
-                        x: .value("Time", point.time, unit: .second),
+                        x: .value("Time", point.time), // <-- FIX HERE
                         y: .value("Acceleration", point.x)
                     )
-                    .foregroundStyle(.blue)
+                    .foregroundStyle(by: .value("Series", "X-Axis"))
+                    
+                    PointMark(
+                        x: .value("Time", point.time), // <-- FIX HERE
+                        y: .value("Acceleration", point.x)
+                    )
+                    .foregroundStyle(by: .value("Series", "X-Axis"))
+                    .opacity(0.4)
                 }
 
                 if showY {
                     LineMark(
-                        x: .value("Time", point.time, unit: .second),  // Use .second to format the Date axis
-                        y: .value("Acceleration", point.y)
-                    ).foregroundStyle(by: .value("y", "pink"))
-
-                    PointMark(
-                        x: .value("Time", point.time, unit: .second),
+                        x: .value("Time", point.time), // <-- FIX HERE
                         y: .value("Acceleration", point.y)
                     )
-                    .foregroundStyle(.pink)
-
+                    .foregroundStyle(by: .value("Series", "Y-Axis"))
+                    
+                    PointMark(
+                        x: .value("Time", point.time), // <-- FIX HERE
+                        y: .value("Acceleration", point.y)
+                    )
+                    .foregroundStyle(by: .value("Series", "Y-Axis"))
+                    .opacity(0.4)
                 }
+                
                 if showZ {
                     LineMark(
-                        x: .value("Time", point.time, unit: .second),  // Use .second to format the Date axis
-                        y: .value("Acceleration", point.z)
-                    ).foregroundStyle(by: .value("z", "yellow"))
-
-                    PointMark(
-                        x: .value("Time", point.time, unit: .second),
+                        x: .value("Time", point.time), // <-- FIX HERE
                         y: .value("Acceleration", point.z)
                     )
-
+                    .foregroundStyle(by: .value("Series", "Z-Axis"))
+                    
+                    PointMark(
+                        x: .value("Time", point.time), // <-- FIX HERE
+                        y: .value("Acceleration", point.z)
+                    )
+                    .foregroundStyle(by: .value("Series", "Z-Axis"))
+                    .opacity(0.4)
                 }
 
                 if showMagnitude {
                     LineMark(
-                        x: .value("Time", point.time, unit: .second),  // Use .second to format the Date axis
-                        y: .value("Acceleration", point.magnitude)
-                    ).foregroundStyle(by: .value("magnitude", "red"))
-
-                    // Optional: Add points to see the data
-
-                    PointMark(
-                        x: .value("Time", point.time, unit: .second),
+                        x: .value("Time", point.time), // <-- FIX HERE
                         y: .value("Acceleration", point.magnitude)
                     )
-                    .foregroundStyle(.red)
+                    .foregroundStyle(by: .value("Series", "Magnitude"))
+                    
+                    PointMark(
+                        x: .value("Time", point.time), // <-- FIX HERE
+                        y: .value("Acceleration", point.magnitude)
+                    )
+                    .foregroundStyle(by: .value("Series", "Magnitude"))
+                    .opacity(0.4)
                 }
-
             }
-            .chartYScale(domain: -2.0...2.0)  // Set a fixed Y-axis (optional)
+            .chartLegend(position: .top, alignment: .center)
             .padding()
 
             HStack {
@@ -81,16 +88,18 @@ struct ChartView: View {
                 Toggle("Z", isOn: $showZ)
                 Toggle("Mag", isOn: $showMagnitude)
             }
-            .toggleStyle(.button) // <-- This makes them look like buttons
+            .toggleStyle(.button)
             .padding(.horizontal)
 
-            Spacer()  // Pushes the chart to the top
+            Spacer()
+        }
+        .onAppear {
+            motionProvider.startUpdates()
         }
     }
 }
 
 #Preview {
-    // This preview will work once you set up the EnvironmentObject
     ChartView()
-        .environmentObject(MotionDataProvider())  // Add this for preview
+        .environmentObject(MotionDataProvider())
 }
